@@ -44,43 +44,69 @@ const headlineWords = [
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="w-full relative flex flex-col items-center py-12">
-      <Badge
-        variant="secondary"
-        className="flex gap-2.5 bg-white rounded-[50px] shadow-[0px_3px_20px_#00000026] px-2.5 py-2 h-auto mb-12"
-      >
-        <img className="h-3 w-[68px]" alt="Star" src="/star-1.svg" />
-        <span className="[font-family:'Geist',Helvetica] font-normal text-[#3e2f56] text-sm tracking-[-0.14px] leading-[16.8px] whitespace-nowrap">
-          100+ Satisfied Customers
-        </span>
-      </Badge>
+    <section className="w-full relative flex flex-col items-center py-10 md:py-16 px-4">
 
-      <div className="w-full flex flex-col items-center">
-      <div className="w-full flex flex-col items-center">
-  <div className="text-center mt-6">
-    <h1 className="font-medium text-[#3e2f56] text-[64px] leading-[1.1] tracking-[-3px] font-[Geist,Helvetica]">
+  {/* Badge */}
+  <Badge
+    variant="secondary"
+    className="flex gap-2.5 bg-white rounded-[50px] shadow-[0px_3px_20px_#00000026] 
+               px-3 py-2 h-auto mb-8 md:mb-12"
+  >
+    <img className="h-3 w-[68px]" alt="Star" src="/star-1.svg" />
+    <span className="font-[Geist,Helvetica] font-normal text-[#3e2f56] 
+                     text-xs sm:text-sm leading-[1.4] whitespace-nowrap">
+      100+ Satisfied Customers
+    </span>
+  </Badge>
+
+  {/* Heading */}
+  <div className="w-full flex flex-col items-center">
+    <h1
+      className="
+        font-[Geist,Helvetica] font-medium text-[#3e2f56] text-center 
+        leading-[1.15] tracking-[-1.2px]
+        
+        text-[32px]      /* Mobile */
+        sm:text-[42px]   /* Small devices */
+        md:text-[56px]   /* Tablets */
+        lg:text-[64px]   /* Desktop */
+      "
+    >
       we build brands <br />
-       that hustle as hard <br />
-       as you do
+      that hustle as hard <br />
+      as you do
     </h1>
   </div>
-</div>
 
+  {/* Subtext */}
+  <p className="font-[Geist,Helvetica] font-normal text-[#707070] text-center 
+                 text-sm sm:text-base leading-[1.4] mt-4">
+    From bold ideas to seamless design every detail
+  </p>
+  <p className="font-[Geist,Helvetica] font-normal text-[#707070] text-center 
+                 text-sm sm:text-base leading-[1.4] mb-8">
+    is built to inspire action.
+  </p>
 
-        <p className="[font-family:'Geist',Helvetica] font-normal text-[#707070] text-base text-center tracking-[-0.16px] leading-[22.4px] mb-[1.9px]">
-          From bold ideas to seamless design every detail
-        </p>
-        <p className="[font-family:'Geist',Helvetica] font-normal text-[#707070] text-base text-center tracking-[-0.16px] leading-[22.4px] mb-8">
-          is built to inspire action.
-        </p>
+  {/* Button */}
+  <Button
+    className="
+      relative rounded-[50px] overflow-hidden shadow-[0px_10px_20px_1px_#00000080]
+      bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)]
+      
+      w-[180px] h-12 text-sm    /* Mobile */
+      sm:w-[195px] sm:h-14 sm:text-base  /* Desktop */
+    "
+  >
+    <span className="font-[Geist,Helvetica] font-medium text-white whitespace-nowrap relative z-10">
+      Book an Intro Call
+    </span>
 
-        <Button className="relative w-[195px] h-14 rounded-[50px] shadow-[0px_10px_20px_1px_#00000080] bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)] overflow-hidden">
-          <span className="[font-family:'Geist',Helvetica] font-medium text-white text-base tracking-[-0.48px] leading-4 whitespace-nowrap relative z-10">
-            Book an Intro Call
-          </span>
-          <div className="absolute h-[200.00%] top-[-123.20%] -left-14 w-[50px] bg-[#ffffff4c] rotate-45 blur-[2.5px]" />
-        </Button>
-      </div>
-    </section>
+    {/* Shine effect */}
+    <div className="absolute h-[200%] top-[-123%] -left-14 w-[50px] 
+                    bg-[#ffffff4c] rotate-45 blur-[2.5px]"/>
+  </Button>
+</section>
+
   );
 };

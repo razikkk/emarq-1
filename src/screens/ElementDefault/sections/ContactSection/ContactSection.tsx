@@ -90,7 +90,7 @@ export const ContactSection = (): JSX.Element => {
 
           <footer className="flex items-center justify-center mt-5 mb-[10.2px]">
             <p className="[font-family:'Geist',Helvetica] font-normal text-[#3e2f56] text-sm tracking-[-0.14px] leading-[16.8px]">
-              © Copyright 2024. Rights Reserved.
+              © Copyright 2025. Rights Reserved.
             </p>
           </footer>
         </CardContent>

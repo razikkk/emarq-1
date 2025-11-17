@@ -49,7 +49,7 @@ export const TestimonialsSection = (): JSX.Element => {
                 </p>
               </div>
 
-              <div className="w-full max-w-[500px] relative">
+              <div className="w-full max-w-[500px] relative hidden md:block">
                 <div className="relative">
                   <Input
                     type="email"
@@ -64,6 +64,20 @@ export const TestimonialsSection = (): JSX.Element => {
                   </Button>
                 </div>
               </div>
+              <div className="w-full max-w-[500px] flex flex-col gap-4 md:hidden">
+  <Input
+    type="email"
+    placeholder="Enter your email"
+    className="h-14 rounded-[50px] shadow-[0px_5px_20px_#0000001a] border-[#8888881a] px-[30px] [font-family:'Geist',Helvetica] font-normal text-base tracking-[-0.48px] placeholder:text-[#bababa]"
+  />
+
+  <Button className="h-14 w-full rounded-[50px] shadow-[0px_10px_20px_#00000080] bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)] hover:bg-[linear-gradient(186deg,rgba(62,47,86,0.9)_0%,rgba(62,47,86,0.9)_100%)] overflow-hidden">
+    <span className="[font-family:'Geist',Helvetica] font-medium text-white text-base text-center tracking-[-0.48px] leading-4 relative z-10">
+      Subscribe
+    </span>
+    <div className="absolute h-[200%] top-[-123.22%] -left-14 w-[50px] bg-[#ffffff4c] rotate-45 blur-[2.5px]" />
+  </Button>
+</div>
             </div>
           </div>
         </CardContent>
