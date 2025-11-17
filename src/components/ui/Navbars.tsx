@@ -22,12 +22,13 @@ export const Navbar = () => {
       </div>
 
       {/* CONTACT BUTTON */}
-      <Button className="w-[180px] h-[50px] rounded-[50px] bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)] overflow-hidden flex items-center justify-center">
-        <div className="font-medium text-white text-sm tracking-[-0.48px] leading-4 whitespace-nowrap font-[Geist,Helvetica]">
-          Contact
-        </div>
-        <div className="absolute h-[200%] top-[-120%] -left-10 w-[40px] bg-[#ffffff4c] rotate-45 blur-[2px] pointer-events-none" />
-      </Button>
+      <Button className="relative w-[180px] h-[50px] rounded-[50px] bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)] overflow-hidden flex items-center justify-center">
+  <div className="font-medium text-white text-sm tracking-[-0.48px] leading-4 whitespace-nowrap font-[Geist,Helvetica]">
+    Contact
+  </div>
+  <div className="absolute h-[200%] top-[-120%] -left-10 w-[40px] bg-[#ffffff4c] rotate-45 blur-[2px] pointer-events-none" />
+</Button>
+
 
     </div>
 
