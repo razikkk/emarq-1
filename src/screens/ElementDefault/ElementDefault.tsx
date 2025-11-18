@@ -7,10 +7,11 @@ import { HeroSection } from "./sections/HeroSection";
 import { MainContentSection } from "./sections/MainContentSection";
 import { ServicesSection } from "./sections/ServicesSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
-import { FaXTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { Navbar } from "../../components/ui/Navbars";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BiLogoGmail } from "react-icons/bi";
 
 
 export const ElementDefault = (): JSX.Element => {
@@ -20,7 +21,7 @@ useEffect(() => {
   AOS.init();
 }, []);
   return (
-    <div className="w-full min-h-screen flex flex-col bg-[linear-gradient(0deg,rgba(235,236,237,1)_0%,rgba(235,236,237,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] overflow-hidden">
+    <div id="home" className="w-full min-h-screen flex flex-col bg-[linear-gradient(0deg,rgba(235,236,237,1)_0%,rgba(235,236,237,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] overflow-hidden">
       <div className="flex-1 relative bg-[#ebeced]">
         <div className="absolute top-0 left-0 w-full h-[760px] opacity-10  bg-cover bg-[50%_50%] pointer-events-none" />
 
@@ -56,13 +57,22 @@ useEffect(() => {
 
     {/* Right Section: Social Icons */}
     <div className="flex items-center gap-4 translate-x-3 translate-y-1 mt-2 md:mt-0">
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <FaXTwitter className="w-5 h-5 text-[#3e2f56]" />
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <FaLinkedinIn className="w-5 h-5 text-[#3e2f56]" />
-      </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <a
+  href="https://wa.me/971506568512"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp className="w-5 h-5 text-[#3e2f56]" />
+</a>
+<a
+  href="mailto:Info@emarq.ae"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <BiLogoGmail className="w-5 h-5 text-[#3e2f56]" />
+</a>
+
+      <a href="https://www.instagram.com/emarq.ae?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
         <FaInstagram className="w-5 h-5 text-[#3e2f56]" />
       </a>
     </div>
@@ -92,7 +102,7 @@ useEffect(() => {
           <FeaturesSection />
           <MainContentSection />
           {/* <ServicesSection /> */}
-          <TestimonialsSection />
+          {/* <TestimonialsSection /> */}
           <FaqSection />
           <ContactSection />
         </div>

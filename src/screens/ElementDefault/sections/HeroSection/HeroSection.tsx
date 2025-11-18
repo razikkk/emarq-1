@@ -119,9 +119,11 @@ export const HeroSection = (): JSX.Element => {
     opacity-0 animate-[fadeUp_0.8s_ease-out_forwards_0.6s]
   "
 >
+<a href="mailto:Info@emarq.ae">
   <span className="font-[Geist,Helvetica] font-medium text-white whitespace-nowrap relative z-10">
-    Book an Intro Call
+    Book a Consultation
   </span>
+</a>
 
   {/* Shine effect */}
   <div className="absolute h-[200%] top-[-123%] -left-14 w-[50px] 
