@@ -153,7 +153,7 @@ I want to get in touch with Emarq.`;
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="800"
-                href="tel:+1234567890"
+                href="tel:+971506568512"
                 className="[font-family:'Geist',Helvetica] font-medium text-[#3e2f56] text-xl tracking-[-1.00px]"
               >
                 971506568512
