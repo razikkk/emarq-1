@@ -84,41 +84,41 @@ export const FeaturesSection = (): JSX.Element => {
   "
 >
   {servicesData.map((service, index) => (
-    <Card
-      key={index}
-      className="
-        bg-[#3e2f56] 
-        rounded-[30px] 
-        shadow-[0px_5px_20px_#0000001a] 
-        w-[90%] 
-        sm:w-[350px] 
-        md:w-[400px] 
-        border-0 
-        h-[260px] 
-        sm:h-[280px]
-      "
-    >
-      <CardContent className="flex items-center justify-center h-full p-0">
-        <div className="flex flex-col items-center">
-          <img
-            className="
-              w-[140px] 
-              sm:w-[160px] 
-              md:w-[180px] 
-              h-28 
-              sm:h-32 
-              md:h-36 
-              mb-6
-            "
-            alt={service.title}
-            src={service.icon}
-          />
-          <span className="font-medium text-white text-base tracking-[-0.48px] leading-4">
-            {service.title}
-          </span>
-        </div>
-      </CardContent>
-    </Card>
+   <Card
+   key={index}
+   style={{ animationDelay: `${1 + index * 0.2}s` }}
+   className="
+     bg-[#3e2f56] 
+     rounded-[30px] 
+     shadow-[0px_5px_20px_#0000001a] 
+     w-[90%] 
+     sm:w-[350px] 
+     md:w-[400px] 
+     border-0 
+     h-[260px] 
+     sm:h-[280px]
+     opacity-0 
+     animate-[fadeUp_0.9s_ease-out_forwards]
+   "
+ >
+   <CardContent className="flex items-center justify-center h-full p-0">
+     <div className="flex flex-col items-center">
+       <img
+         className="
+           w-[140px] sm:w-[160px] md:w-[180px] 
+           h-28 sm:h-32 md:h-36 mb-6
+         "
+         alt={service.title}
+         src={service.icon}
+       />
+ 
+       <span className="font-medium text-white text-base tracking-[-0.48px] leading-4">
+         {service.title}
+       </span>
+     </div>
+   </CardContent>
+ </Card>
+ 
   ))}
 </div>
 

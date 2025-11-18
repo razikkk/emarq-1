@@ -12,22 +12,22 @@ const headingWords = [
 
 const projectImages = [
   {
-    src: "/image---sienna-desktop-ui.png",
+    src: "/1.JPEG",
     alt: "Sienna Desktop UI Project 1",
     title: "Project One",
   },
   {
-    src: "/image---sienna-desktop-ui-1.png",
+    src: "/2.JPG",
     alt: "Sienna Desktop UI Project 2",
     title: "Project Two",
   },
   {
-    src: "/image---sienna-desktop-ui-2.png",
+    src: "/3.JPG",
     alt: "Sienna Desktop UI Project 3",
     title: "Project Three",
   },
   {
-    src: "/image---sienna-desktop-ui-3.png",
+    src: "/4.PNG",
     alt: "Sienna Desktop UI Project 4",
     title: "Project Four",
   },

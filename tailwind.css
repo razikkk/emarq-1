@@ -196,3 +196,26 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+[data-aos][data-aos-blur="true"] {
+  filter: blur(6px);
+  opacity: 0;
+  transition-property: filter, opacity;
+}
+
+[data-aos].aos-animate[data-aos-blur="true"] {
+  filter: blur(0);
+  opacity: 1;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

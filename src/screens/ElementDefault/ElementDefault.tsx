@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "../../components/ui/button";
 import { ContactSection } from "./sections/ContactSection";
 import { FaqSection } from "./sections/FaqSection";
@@ -9,8 +9,16 @@ import { ServicesSection } from "./sections/ServicesSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { FaXTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import { Navbar } from "../../components/ui/Navbars";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export const ElementDefault = (): JSX.Element => {
+
+
+useEffect(() => {
+  AOS.init();
+}, []);
   return (
     <div className="w-full min-h-screen flex flex-col bg-[linear-gradient(0deg,rgba(235,236,237,1)_0%,rgba(235,236,237,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] overflow-hidden">
       <div className="flex-1 relative bg-[#ebeced]">
@@ -35,7 +43,7 @@ export const ElementDefault = (): JSX.Element => {
       {/* Green Dot + Text */}
       <div className="flex items-center gap-2.5 translate-x-2 translate-y-1">
         <div className="relative h-2 w-2 flex items-center justify-center bg-[#06b300] rounded-full">
-          <div className="absolute h-4 w-4 bg-[#07d10066] rounded-full" />
+          <div className="absolute h-4 w-4 bg-[#07d10066] rounded-full"/>
         </div>
         <div className="font-normal text-[#3e2f56] text-sm leading-[16.8px] whitespace-nowrap font-[Geist,Helvetica]">
           3 Open slots

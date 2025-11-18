@@ -60,52 +60,74 @@ export const HeroSection = (): JSX.Element => {
   </Badge>
 
   {/* Heading */}
-  <div className="w-full flex flex-col items-center">
-    <h1
-      className="
-        font-[Geist,Helvetica] font-medium text-[#3e2f56] text-center 
-        leading-[1.15] tracking-[-1.2px]
-        
-        text-[32px]      /* Mobile */
-        sm:text-[42px]   /* Small devices */
-        md:text-[56px]   /* Tablets */
-        lg:text-[64px]   /* Desktop */
-      "
-    >
-      we build brands <br />
-      that hustle as hard <br />
-      as you do
-    </h1>
-  </div>
+  <div className="w-full flex flex-col items-center text-center">
+
+<h1
+  className="
+    font-[Geist,Helvetica] font-medium text-[#3e2f56] 
+    leading-[1.15] tracking-[-1.2px]
+    text-[32px]
+    sm:text-[42px]
+    md:text-[56px]
+    lg:text-[64px]
+  "
+>
+  <span 
+    className="block opacity-0 animate-[fadeUp_0.8s_ease-out_forwards]"
+  >
+    we build brands
+  </span>
+
+  <span 
+    className="block opacity-0 animate-[fadeUp_0.8s_ease-out_forwards_0.2s]"
+  >
+    that hustle as hard
+  </span>
+
+  <span 
+    className="block opacity-0 animate-[fadeUp_0.8s_ease-out_forwards_0.4s]"
+  >
+    as you do
+  </span>
+</h1>
+
+</div>
+
 
   {/* Subtext */}
   <p className="font-[Geist,Helvetica] font-normal text-[#707070] text-center 
-                 text-sm sm:text-base leading-[1.4] mt-4">
-    From bold ideas to seamless design every detail
-  </p>
-  <p className="font-[Geist,Helvetica] font-normal text-[#707070] text-center 
-                 text-sm sm:text-base leading-[1.4] mb-8">
-    is built to inspire action.
-  </p>
+                 text-sm sm:text-base leading-[1.4] mt-4 
+                 opacity-0 animate-[fadeUp_0.8s_ease-out_forwards]">
+  From bold ideas to seamless design every detail
+</p>
+
+<p className="font-[Geist,Helvetica] font-normal text-[#707070] text-center 
+                 text-sm sm:text-base leading-[1.4] mb-8
+                 opacity-0 animate-[fadeUp_0.8s_ease-out_forwards_0.2s]">
+  is built to inspire action.
+</p>
+
 
   {/* Button */}
   <Button
-    className="
-      relative rounded-[50px] overflow-hidden shadow-[0px_10px_20px_1px_#00000080]
-      bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)]
-      
-      w-[180px] h-12 text-sm    /* Mobile */
-      sm:w-[195px] sm:h-14 sm:text-base  /* Desktop */
-    "
-  >
-    <span className="font-[Geist,Helvetica] font-medium text-white whitespace-nowrap relative z-10">
-      Book an Intro Call
-    </span>
+  className="
+    relative rounded-[50px] overflow-hidden shadow-[0px_10px_20px_1px_#00000080]
+    bg-[linear-gradient(186deg,rgba(62,47,86,1)_0%,rgba(62,47,86,1)_100%)]
+    
+    w-[180px] h-12 text-sm    
+    sm:w-[195px] sm:h-14 sm:text-base
+    opacity-0 animate-[fadeUp_0.8s_ease-out_forwards_0.6s]
+  "
+>
+  <span className="font-[Geist,Helvetica] font-medium text-white whitespace-nowrap relative z-10">
+    Book an Intro Call
+  </span>
 
-    {/* Shine effect */}
-    <div className="absolute h-[200%] top-[-123%] -left-14 w-[50px] 
-                    bg-[#ffffff4c] rotate-45 blur-[2.5px]"/>
-  </Button>
+  {/* Shine effect */}
+  <div className="absolute h-[200%] top-[-123%] -left-14 w-[50px] 
+                  bg-[#ffffff4c] rotate-45 blur-[2.5px]"/>
+</Button>
+
 </section>
 
   );
