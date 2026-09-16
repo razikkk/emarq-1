@@ -17,12 +17,18 @@ import { BiLogoGmail } from "react-icons/bi";
 export const ElementDefault = (): JSX.Element => {
 
 
-useEffect(() => {
-  AOS.init();
-}, []);
+  useEffect(() => {
+    AOS.init({
+      once: true,          // Prevents elements from disappearing when scrolling up
+      duration: 800,       // Global default runtime duration
+      easing: "ease-out",  // Premium, fluid motion acceleration profile
+    });
+  }, []);
+
+
   return (
     <div id="home" className="w-full min-h-screen flex flex-col bg-[linear-gradient(0deg,rgba(235,236,237,1)_0%,rgba(235,236,237,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] overflow-hidden">
-      <div className="flex-1 relative bg-[#ebeced]">
+      <div className="flex-1 relative bg-[#E8C1C5]">
         <div className="absolute top-0 left-0 w-full h-[760px] opacity-10  bg-cover bg-[50%_50%] pointer-events-none" />
 
         {/* Top Info Bar */}
@@ -100,7 +106,7 @@ useEffect(() => {
           </div> */}
 
           <FeaturesSection />
-          <MainContentSection />
+          {/* <MainContentSection /> */}
           {/* <ServicesSection /> */}
           {/* <TestimonialsSection /> */}
           <FaqSection />

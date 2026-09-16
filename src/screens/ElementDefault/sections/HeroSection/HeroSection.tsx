@@ -75,7 +75,7 @@ export const HeroSection = (): JSX.Element => {
   <span 
     className="block opacity-0 animate-[fadeUp_0.8s_ease-out_forwards]"
   >
-    we build brands
+    We build brands
   </span>
 
   <span 
